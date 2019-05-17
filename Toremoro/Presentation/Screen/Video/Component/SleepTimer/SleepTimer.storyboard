@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ij-Wz-s4u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sleep Timer View Controller-->
+        <scene sceneID="caP-Io-lmy">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="8ij-Wz-s4u" customClass="SleepTimerViewController" customModule="Toremoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trz-iM-yVt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="60" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="dTP-GS-aey">
+                                <rect key="frame" x="0.0" y="20" width="375" height="583"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="9L5-0O-old">
+                                    <rect key="frame" x="0.0" y="165.5" width="375" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スリープタイマー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B19-Yl-buZ">
+                                            <rect key="frame" x="114" y="21.5" width="147" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="B19-Yl-buZ" firstAttribute="centerX" secondItem="9L5-0O-old" secondAttribute="centerX" id="TeF-8R-K92"/>
+                                        <constraint firstItem="B19-Yl-buZ" firstAttribute="centerY" secondItem="9L5-0O-old" secondAttribute="centerY" id="nOg-ES-skG"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="selectionCell" rowHeight="80" id="5lT-fc-IDd" customClass="SleepTimerViewSelectionCell" customModule="Toremoro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5lT-fc-IDd" id="nFy-Os-xSd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARB-WN-gM7">
+                                                    <rect key="frame" x="166" y="30.5" width="43" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ARB-WN-gM7" firstAttribute="centerX" secondItem="nFy-Os-xSd" secondAttribute="centerX" id="ZZZ-jC-goK"/>
+                                                <constraint firstItem="ARB-WN-gM7" firstAttribute="centerY" secondItem="nFy-Os-xSd" secondAttribute="centerY" id="gNS-e3-a3B"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="ARB-WN-gM7" id="glp-Gz-QAG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4x-pC-4I7">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYO-X2-na8">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="1"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="CHo-KP-9as"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du5-y5-hYN">
+                                        <rect key="frame" x="141.5" y="15" width="92" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="キャンセル">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pYO-X2-na8" firstAttribute="top" secondItem="z4x-pC-4I7" secondAttribute="top" id="5FY-2s-dou"/>
+                                    <constraint firstItem="pYO-X2-na8" firstAttribute="leading" secondItem="z4x-pC-4I7" secondAttribute="leading" constant="16" id="V0j-li-VCM"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYO-X2-na8" secondAttribute="trailing" constant="16" id="c4T-zz-ajl"/>
+                                    <constraint firstItem="du5-y5-hYN" firstAttribute="centerX" secondItem="z4x-pC-4I7" secondAttribute="centerX" id="iEV-Zs-aXR"/>
+                                    <constraint firstItem="du5-y5-hYN" firstAttribute="centerY" secondItem="z4x-pC-4I7" secondAttribute="centerY" id="opo-yw-I3T"/>
+                                    <constraint firstAttribute="height" constant="64" id="p2B-He-v50"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z4x-pC-4I7" firstAttribute="top" secondItem="dTP-GS-aey" secondAttribute="bottom" id="BhK-01-ULD"/>
+                            <constraint firstItem="Gha-Ii-gjm" firstAttribute="trailing" secondItem="z4x-pC-4I7" secondAttribute="trailing" id="NPY-gn-rwp"/>
+                            <constraint firstItem="Gha-Ii-gjm" firstAttribute="bottom" secondItem="z4x-pC-4I7" secondAttribute="bottom" id="RAd-Tm-vcL"/>
+                            <constraint firstItem="Gha-Ii-gjm" firstAttribute="trailing" secondItem="dTP-GS-aey" secondAttribute="trailing" id="Ybf-wL-S91"/>
+                            <constraint firstItem="dTP-GS-aey" firstAttribute="top" secondItem="Gha-Ii-gjm" secondAttribute="top" id="qeX-Se-chA"/>
+                            <constraint firstItem="z4x-pC-4I7" firstAttribute="leading" secondItem="Gha-Ii-gjm" secondAttribute="leading" id="qhf-Jy-QLg"/>
+                            <constraint firstItem="dTP-GS-aey" firstAttribute="leading" secondItem="Gha-Ii-gjm" secondAttribute="leading" id="uLX-dI-4xY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gha-Ii-gjm"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="du5-y5-hYN" id="sIK-SM-Kdw"/>
+                        <outlet property="tableView" destination="dTP-GS-aey" id="wWc-zx-CzL"/>
+                        <outlet property="titleLabel" destination="B19-Yl-buZ" id="xNM-vQ-lPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z76-Si-KOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>

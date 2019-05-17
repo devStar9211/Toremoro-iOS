@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oqn-SR-4xb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SEARCH-->
+        <scene sceneID="XsO-kp-iRW">
+            <objects>
+                <viewController id="oqn-SR-4xb" customClass="SearchViewController" customModule="Toremoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="02q-ho-DVM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-hx-zYf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.1764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="pY1-hx-zYf" firstAttribute="leading" secondItem="5FU-As-Wvo" secondAttribute="leading" id="0H1-xx-cv4"/>
+                            <constraint firstItem="5FU-As-Wvo" firstAttribute="trailing" secondItem="pY1-hx-zYf" secondAttribute="trailing" id="U1m-K6-hdh"/>
+                            <constraint firstItem="5FU-As-Wvo" firstAttribute="bottom" secondItem="pY1-hx-zYf" secondAttribute="bottom" id="aWf-aO-Awp"/>
+                            <constraint firstItem="pY1-hx-zYf" firstAttribute="top" secondItem="5FU-As-Wvo" secondAttribute="top" id="knN-Wf-9dB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5FU-As-Wvo"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iJW-Ym-dOw" appends="YES" id="W3q-WB-4s8"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SEARCH" selectedImage="Search" id="4Y0-wH-a8K"/>
+                    <navigationItem key="navigationItem" title="SEARCH" largeTitleDisplayMode="always" id="Nk6-BH-eKc"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="pY1-hx-zYf" id="bEe-zg-UMo"/>
+                        <outlet property="tapGesture" destination="iJW-Ym-dOw" id="5EN-iE-3a1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlg-s7-ald" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="iJW-Ym-dOw"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="32" height="32"/>
+    </resources>
+</document>

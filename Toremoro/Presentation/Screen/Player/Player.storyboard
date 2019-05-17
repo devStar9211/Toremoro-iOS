@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SdL-Wp-i2F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="hop-ZC-KPW">
+            <objects>
+                <viewController id="SdL-Wp-i2F" customClass="PlayerViewController" customModule="Toremoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44Q-Kn-PJg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-RA-AeA" customClass="ProgressView" customModule="Toremoro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ncb-QG-12B"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cj2-gh-d2k">
+                                <rect key="frame" x="14" y="8" width="347" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-H9-C8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ehQ-H9-C8x" secondAttribute="height" id="Uhx-dy-20U"/>
+                                        </constraints>
+                                        <state key="normal" image="Up"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thG-Ty-Afh">
+                                        <rect key="frame" x="32" y="0.0" width="283" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRH-Hv-8Sf">
+                                        <rect key="frame" x="323" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="IRH-Hv-8Sf" secondAttribute="height" id="jnw-Fd-fHb"/>
+                                        </constraints>
+                                        <state key="normal" image="Play"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bR6-Ve-1b0" firstAttribute="trailing" secondItem="Cj2-gh-d2k" secondAttribute="trailing" constant="14" id="0ei-33-uMs"/>
+                            <constraint firstItem="ZPj-RA-AeA" firstAttribute="top" secondItem="44Q-Kn-PJg" secondAttribute="top" id="OQ2-4Y-6CM"/>
+                            <constraint firstItem="bR6-Ve-1b0" firstAttribute="bottom" secondItem="Cj2-gh-d2k" secondAttribute="bottom" constant="8" id="P31-HG-e6d"/>
+                            <constraint firstItem="bR6-Ve-1b0" firstAttribute="trailing" secondItem="ZPj-RA-AeA" secondAttribute="trailing" id="Wj1-G8-oie"/>
+                            <constraint firstItem="ZPj-RA-AeA" firstAttribute="leading" secondItem="44Q-Kn-PJg" secondAttribute="leading" id="cZj-Bw-mGM"/>
+                            <constraint firstItem="Cj2-gh-d2k" firstAttribute="leading" secondItem="bR6-Ve-1b0" secondAttribute="leading" constant="14" id="pyy-ma-D1Z"/>
+                            <constraint firstItem="Cj2-gh-d2k" firstAttribute="top" secondItem="bR6-Ve-1b0" secondAttribute="top" constant="8" id="xxQ-k9-9aO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bR6-Ve-1b0"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="40"/>
+                    <connections>
+                        <outlet property="openButton" destination="ehQ-H9-C8x" id="hfg-BD-FSd"/>
+                        <outlet property="playButton" destination="IRH-Hv-8Sf" id="Yts-xn-cam"/>
+                        <outlet property="progressView" destination="ZPj-RA-AeA" id="WUM-Vr-dRV"/>
+                        <outlet property="titleLabel" destination="thG-Ty-Afh" id="yOE-Sm-1a4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5P3-u2-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Play" width="24" height="24"/>
+        <image name="Up" width="24" height="24"/>
+    </resources>
+</document>

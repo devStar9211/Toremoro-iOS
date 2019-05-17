@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app_store_url</key>
+	<string>https://itunes.apple.com/jp/app/id1438318243?mt=8</string>
+	<key>ios_minimum_required_version</key>
+	<string>0.0.0</string>
+	<key>api_staging_url</key>
+	<string>https://toremoro-staging-herokuapp-com.global.ssl.fastly.net/api/v1</string>
+	<key>api_production_url</key>
+	<string>https://toremoro-production-herokuapp-com.global.ssl.fastly.net/api/v1</string>
+</dict>
+</plist>

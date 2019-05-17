@@ -1,0 +1,323 @@
+PODS:
+  - ActiveLabel (1.0.1)
+  - Alamofire (4.8.1)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
+  - Differentiator (3.1.0)
+  - ExtensionProperty (1.0.2)
+  - Fabric (1.7.13)
+  - FDFullscreenPopGesture (1.1)
+  - Firebase/Auth (5.16.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.3.0)
+  - Firebase/Core (5.16.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.5.0)
+  - Firebase/CoreOnly (5.16.0):
+    - FirebaseCore (= 5.2.0)
+  - Firebase/DynamicLinks (5.16.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (= 3.4.0)
+  - Firebase/Performance (5.16.0):
+    - Firebase/Core
+    - FirebasePerformance (= 2.2.2)
+  - FirebaseABTesting (2.0.0):
+    - FirebaseCore (~> 5.0)
+    - Protobuf (~> 3.5)
+  - FirebaseAnalytics (5.5.0):
+    - FirebaseCore (~> 5.2)
+    - FirebaseInstanceID (~> 3.4)
+    - GoogleAppMeasurement (= 5.5.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.1.0)
+  - FirebaseAuth (5.3.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.2.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDynamicLinks (3.4.0):
+    - FirebaseAnalytics (~> 5.1)
+    - FirebaseAnalyticsInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+  - FirebaseInstanceID (3.4.0):
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebasePerformance (2.2.2):
+    - FirebaseAnalytics (~> 5.4)
+    - FirebaseInstanceID (~> 3.3)
+    - FirebaseRemoteConfig (~> 3.1)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleUtilities/ISASwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseRemoteConfig (3.1.0):
+    - FirebaseABTesting (~> 2.0)
+    - FirebaseAnalytics (~> 5.3)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleUtilities/Environment (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - Protobuf (~> 3.5)
+  - GoogleAppMeasurement (5.5.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/Logger (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.7):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.7)
+  - GoogleUtilities/ISASwizzler (5.3.7)
+  - GoogleUtilities/Logger (5.3.7):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.7):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.7)"
+  - GoogleUtilities/Reachability (5.3.7):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.7):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.1)
+  - Instantiate (3.0.0)
+  - InstantSearchClient (6.1.1)
+  - KMPlaceholderTextView (1.4.0)
+  - lottie-ios (2.5.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Nuke (7.5.2)
+  - PanModal (1.0.2)
+  - Player (0.12.1)
+  - PluggableAppDelegate (1.1.0)
+  - Protobuf (3.6.1)
+  - ReactorKit (1.2.1):
+    - RxSwift (>= 4.0.0)
+  - Result (3.2.4)
+  - ReusableKit (2.1.0):
+    - ReusableKit/Core (= 2.1.0)
+  - ReusableKit/Core (2.1.0)
+  - RxAlertController (4.0.0):
+    - RxSwift (~> 4.3.1)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxFirebase/RemoteConfig (0.2.5):
+    - FirebaseRemoteConfig (~> 3)
+    - RxCocoa (~> 4)
+    - RxSwift (~> 4)
+  - RxGesture (2.0.1):
+    - RxCocoa (~> 4.3.1)
+    - RxSwift (~> 4.3.1)
+  - RxKeyboard (0.9.0):
+    - RxCocoa (>= 4.3.1)
+    - RxSwift (>= 4.3.1)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - RxViewController (0.4.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - Spring (1.0.3)
+  - SwiftLint (0.30.1)
+  - SwiftyBeaver (1.6.1)
+  - SwiftyUserDefaults (4.0.0-alpha.1)
+  - URLNavigator (2.1.0)
+  - Validator (3.1.1)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Crashlytics
+  - ExtensionProperty
+  - Fabric
+  - FDFullscreenPopGesture (= 1.1)
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/DynamicLinks
+  - Firebase/Performance
+  - Instantiate
+  - InstantSearchClient (~> 6.0)
+  - KMPlaceholderTextView
+  - lottie-ios
+  - Moya/RxSwift (~> 11.0)
+  - Nuke
+  - PanModal
+  - Player (from `https://github.com/ya-s-u/Player.git`)
+  - PluggableAppDelegate
+  - ReactorKit
+  - ReusableKit
+  - RxAlertController
+  - RxCocoa
+  - RxDataSources
+  - RxFirebase/RemoteConfig
+  - RxGesture
+  - RxKeyboard
+  - RxOptional
+  - RxSwift
+  - RxViewController
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift4`)
+  - SwiftLint
+  - SwiftyBeaver
+  - SwiftyUserDefaults (= 4.0.0-alpha.1)
+  - URLNavigator
+  - Validator (from `https://github.com/ya-s-u/Validator.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Alamofire
+    - Crashlytics
+    - Differentiator
+    - ExtensionProperty
+    - Fabric
+    - FDFullscreenPopGesture
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseDynamicLinks
+    - FirebaseInstanceID
+    - FirebasePerformance
+    - FirebaseRemoteConfig
+    - GoogleAppMeasurement
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - Instantiate
+    - InstantSearchClient
+    - KMPlaceholderTextView
+    - lottie-ios
+    - Moya
+    - nanopb
+    - Nuke
+    - PanModal
+    - PluggableAppDelegate
+    - Protobuf
+    - ReactorKit
+    - Result
+    - ReusableKit
+    - RxAlertController
+    - RxCocoa
+    - RxDataSources
+    - RxFirebase
+    - RxGesture
+    - RxKeyboard
+    - RxOptional
+    - RxSwift
+    - RxViewController
+    - SwiftLint
+    - SwiftyBeaver
+    - SwiftyUserDefaults
+    - URLNavigator
+
+EXTERNAL SOURCES:
+  Player:
+    :git: https://github.com/ya-s-u/Player.git
+  Spring:
+    :branch: swift4
+    :git: https://github.com/MengTo/Spring.git
+  Validator:
+    :git: https://github.com/ya-s-u/Validator.git
+
+CHECKOUT OPTIONS:
+  Player:
+    :commit: b6aa8282430fd50d67ca12b0f03e07349f0c4a3c
+    :git: https://github.com/ya-s-u/Player.git
+  Spring:
+    :commit: 8d04081f4b27ff85161addee45b21c1156f0143f
+    :git: https://github.com/MengTo/Spring.git
+  Validator:
+    :commit: 298150ee8c109916f39203204834b22ef14713d8
+    :git: https://github.com/ya-s-u/Validator.git
+
+SPEC CHECKSUMS:
+  ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  ExtensionProperty: 47dafb22b5b289c494b0da3bd15b89db27160d87
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
+  FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
+  FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
+  FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
+  FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: ea2d1816723ef21492b8e9113303e1350db5e08c
+  FirebaseDynamicLinks: 83a0071c95ad715bc324fcb8f51028d5b6a58af0
+  FirebaseInstanceID: 97ea7a5dca9afd72c79bfcdddb7a44aa1cbb42a1
+  FirebasePerformance: 6f77b930f982a54ad487d3de5523ce641db9dcc9
+  FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
+  GoogleAppMeasurement: 621f3bc6211d5ba548debe01fafad30cf5ab6859
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  Instantiate: fa5c8d0ebeb1735da9e30a813de2deb40015cf0f
+  InstantSearchClient: 8e3754ff154e2d65b0a391671a2a36f045a9bf5a
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  PanModal: 01b52e31a2d28e00bad6fa98e14620d706183d13
+  Player: ae8070a33c9360f5c93c247c00236b9489f62fca
+  PluggableAppDelegate: d3804dba81e1851ef425d17dccb977e78af2f1b1
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  ReusableKit: d0b040de03b293288b0ca27a78602691d3346d9b
+  RxAlertController: 3306c07f3d2f150b0b3d5d196669a6f34c6df552
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxFirebase: 85362079d5057969be084977cc6952bd05d8d9ff
+  RxGesture: 26ede4ed13ffc6336d29dbd9a8dff229bdb72de7
+  RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxViewController: 359bbc2fda373a78605b2735afb0f9f4f3f6c3e4
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
+  SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
+  URLNavigator: e8cea3835b3456d7876eb728831e742273c8d209
+  Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
+
+PODFILE CHECKSUM: 8d8efa2cb3517c8a1160680aa9205ae4dc892666
+
+COCOAPODS: 1.6.0.beta.2

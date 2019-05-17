@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lnB-Qt-gln">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--お問い合わせ-->
+        <scene sceneID="LBg-xe-ZM3">
+            <objects>
+                <viewController id="lnB-Qt-gln" customClass="FeedbackViewController" customModule="Toremoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sti-4y-WVv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-aM-h7O">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKx-0K-Wp7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不満や疑問点だけでなく、この音が聞きたい、などのリクエストも受けつけております。お気軽にお問い合わせください。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-il-3tE">
+                                                <rect key="frame" x="16" y="24" width="343" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VO7-Qr-0li" customClass="DesignablePlaceholderTextView" customModule="Toremoro" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="90.5" width="343" height="220"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="Jaj-13-iwq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="お問い合わせ内容"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="返信が必要な場合は、メールアドレスを入力してください。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaG-oc-GwI">
+                                                <rect key="frame" x="16" y="334.5" width="343" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="support@toremoro.app" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hn6-gE-ilJ" customClass="DesignableTextField" customModule="Spring">
+                                                <rect key="frame" x="16" y="384" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="uAv-7M-Eh5"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sidePadding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-qt-YfR" customClass="DesignableGradientButton" customModule="Toremoro" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="464" width="343" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="uum-vV-IFW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="この内容で送信する">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                        <color key="value" red="0.035294117649999998" green="0.2901960784" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.0" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hn6-gE-ilJ" firstAttribute="top" secondItem="YaG-oc-GwI" secondAttribute="bottom" constant="16" id="2D2-9V-0Nd"/>
+                                            <constraint firstItem="VO7-Qr-0li" firstAttribute="leading" secondItem="hKx-0K-Wp7" secondAttribute="leading" constant="16" id="30F-IY-5sl"/>
+                                            <constraint firstAttribute="trailing" secondItem="jrC-il-3tE" secondAttribute="trailing" constant="16" id="CK1-mU-M9Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="VO7-Qr-0li" secondAttribute="trailing" constant="16" id="JAl-Ke-h7q"/>
+                                            <constraint firstItem="qCk-qt-YfR" firstAttribute="leading" secondItem="hKx-0K-Wp7" secondAttribute="leading" constant="16" id="K4n-ct-Kri"/>
+                                            <constraint firstAttribute="trailing" secondItem="hn6-gE-ilJ" secondAttribute="trailing" constant="16" id="OSz-xZ-v1I"/>
+                                            <constraint firstItem="jrC-il-3tE" firstAttribute="top" secondItem="hKx-0K-Wp7" secondAttribute="top" constant="24" id="PHr-IF-jFl"/>
+                                            <constraint firstItem="jrC-il-3tE" firstAttribute="leading" secondItem="hKx-0K-Wp7" secondAttribute="leading" constant="16" id="Q4C-jM-nKp"/>
+                                            <constraint firstItem="YaG-oc-GwI" firstAttribute="leading" secondItem="hKx-0K-Wp7" secondAttribute="leading" constant="16" id="SXg-xy-g2M"/>
+                                            <constraint firstAttribute="trailing" secondItem="YaG-oc-GwI" secondAttribute="trailing" constant="16" id="avW-Zk-9Xd"/>
+                                            <constraint firstAttribute="trailing" secondItem="qCk-qt-YfR" secondAttribute="trailing" constant="16" id="eKZ-Ix-FFv"/>
+                                            <constraint firstItem="YaG-oc-GwI" firstAttribute="top" secondItem="VO7-Qr-0li" secondAttribute="bottom" constant="24" id="eZJ-qR-R2Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="qCk-qt-YfR" secondAttribute="bottom" constant="16" id="pLu-jX-tfn"/>
+                                            <constraint firstItem="hn6-gE-ilJ" firstAttribute="leading" secondItem="hKx-0K-Wp7" secondAttribute="leading" constant="16" id="sKc-7Z-BBD"/>
+                                            <constraint firstItem="VO7-Qr-0li" firstAttribute="top" secondItem="jrC-il-3tE" secondAttribute="bottom" constant="16" id="trM-Z4-8WB"/>
+                                            <constraint firstItem="qCk-qt-YfR" firstAttribute="top" secondItem="hn6-gE-ilJ" secondAttribute="bottom" constant="36" id="z9z-Za-G37"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hKx-0K-Wp7" secondAttribute="trailing" id="531-Tt-RCL"/>
+                                    <constraint firstItem="hKx-0K-Wp7" firstAttribute="leading" secondItem="OAR-aM-h7O" secondAttribute="leading" id="9xW-8C-DWq"/>
+                                    <constraint firstItem="hKx-0K-Wp7" firstAttribute="width" secondItem="OAR-aM-h7O" secondAttribute="width" id="Xqh-KN-DdC"/>
+                                    <constraint firstAttribute="bottom" secondItem="hKx-0K-Wp7" secondAttribute="bottom" id="cj7-dP-y9A"/>
+                                    <constraint firstItem="hKx-0K-Wp7" firstAttribute="top" secondItem="OAR-aM-h7O" secondAttribute="top" id="gAB-GU-Mx6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SU0-Uz-bWc" firstAttribute="trailing" secondItem="OAR-aM-h7O" secondAttribute="trailing" id="BEU-dJ-rkS"/>
+                            <constraint firstItem="OAR-aM-h7O" firstAttribute="top" secondItem="SU0-Uz-bWc" secondAttribute="top" id="UnQ-44-gYX"/>
+                            <constraint firstItem="OAR-aM-h7O" firstAttribute="leading" secondItem="SU0-Uz-bWc" secondAttribute="leading" id="dyt-K8-SKv"/>
+                            <constraint firstItem="SU0-Uz-bWc" firstAttribute="bottom" secondItem="OAR-aM-h7O" secondAttribute="bottom" id="rgj-sh-rUM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SU0-Uz-bWc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="お問い合わせ" largeTitleDisplayMode="never" id="W4C-dy-5Be"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="hn6-gE-ilJ" id="iEW-6h-ho0"/>
+                        <outlet property="scrollView" destination="OAR-aM-h7O" id="RVj-0d-0cx"/>
+                        <outlet property="submitButton" destination="qCk-qt-YfR" id="kTQ-XX-jH9"/>
+                        <outlet property="textView" destination="VO7-Qr-0li" id="sl7-ru-RcV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHq-ko-9BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.399999999999999" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
